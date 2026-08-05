@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b6b5d">
+  <meta name="description" content="안양·의왕·성남·수원 일요일 및 연휴 자유수영 운영 안내">
+  <title>이번 주 자유수영 안내</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17211f;
+      --muted: #61706c;
+      --line: #dce6e2;
+      --paper: #ffffff;
+      --wash: #f2f7f5;
+      --brand: #0b6b5d;
+      --open: #137a4c;
+      --open-bg: #e8f7ee;
+      --closed: #b0362d;
+      --closed-bg: #fff0ed;
+      --uncertain: #8a5d00;
+      --uncertain-bg: #fff7df;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--wash);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      line-height: 1.55;
+      word-break: keep-all;
+    }
+    .hero {
+      padding: 38px 20px 70px;
+      color: white;
+      background: linear-gradient(145deg, #074d45, #0b7967 72%, #159177);
+    }
+    .hero-inner, main, footer { max-width: 760px; margin: 0 auto; }
+    .hero-mark { font-size: 34px; line-height: 1; }
+    h1 { margin: 14px 0 6px; font-size: clamp(28px, 8vw, 42px); letter-spacing: -0.04em; }
+    .hero p { margin: 0; color: rgba(255,255,255,.82); font-size: 15px; }
+    main { margin-top: -40px; padding: 0 14px 42px; }
+    .day-section {
+      overflow: hidden;
+      border: 1px solid rgba(15, 65, 56, .10);
+      border-radius: 24px;
+      background: var(--paper);
+      box-shadow: 0 16px 45px rgba(20, 56, 49, .10);
+    }
+    .day-section + .day-section { margin-top: 18px; }
+    .day-heading { padding: 23px 20px 19px; border-bottom: 1px solid var(--line); }
+    .eyebrow { margin: 0 0 2px; color: var(--brand); font-size: 13px; font-weight: 800; letter-spacing: .04em; }
+    h2 { margin: 0; font-size: 25px; letter-spacing: -.04em; }
+    .summary { margin: 7px 0 0; color: var(--muted); font-size: 14px; font-weight: 650; }
+    .facility-list { padding: 4px 20px 10px; }
+    .facility { padding: 17px 0 16px; border-bottom: 1px solid var(--line); }
+    .facility:last-child { border-bottom: 0; }
+    .facility-top { display: flex; align-items: flex-start; gap: 12px; justify-content: space-between; }
+    h3 { margin: 0; font-size: 17px; line-height: 1.35; letter-spacing: -.025em; }
+    .status {
+      flex: 0 0 auto;
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .status.open { color: var(--open); background: var(--open-bg); }
+    .status.closed { color: var(--closed); background: var(--closed-bg); }
+    .status.uncertain { color: var(--uncertain); background: var(--uncertain-bg); }
+    .times { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 11px; }
+    .time {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 10px;
+      border: 1px solid #cfe0da;
+      border-radius: 10px;
+      background: #f7fbf9;
+      color: #164f45;
+      font-size: 15px;
+      font-weight: 780;
+      letter-spacing: -.01em;
+      white-space: nowrap;
+    }
+    .no-time { color: var(--muted); font-size: 14px; }
+    .note { margin: 10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+    footer { padding: 0 20px 34px; color: var(--muted); text-align: center; font-size: 12px; }
+    footer p { margin: 4px 0; }
+    @media (min-width: 620px) {
+      .day-heading { display: flex; align-items: end; justify-content: space-between; }
+      .summary { margin-bottom: 3px; }
+      main { padding-left: 20px; padding-right: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-mark" aria-hidden="true">🏊</div>
+      <h1>이번 주 자유수영</h1>
+      <p>안양 · 의왕 · 성남 · 수원 운영 정보를 한눈에 확인하세요.</p>
+    </div>
+  </header>
+  <main>
+    <section class="day-section">
+      <div class="day-heading">
+        <div>
+          <p class="eyebrow">이번 주 자유수영</p>
+          <h2>8월 9일 (일)</h2>
+        </div>
+        <p class="summary">운영 5곳 · 휴장 2곳</p>
+      </div>
+      <div class="facility-list">
+      <article class="facility closed">
+        <div class="facility-top">
+          <h3>안양종합운동장 수영장</h3>
+          <span class="status closed">휴장</span>
+        </div>
+        <div class="times"><span class="no-time">운영 시간이 없습니다</span></div>
+        <p class="note">매주 일요일 정기 휴장</p>
+      </article>
+      <article class="facility closed">
+        <div class="facility-top">
+          <h3>안양 밸런스 수영장</h3>
+          <span class="status closed">휴장</span>
+        </div>
+        <div class="times"><span class="no-time">운영 시간이 없습니다</span></div>
+        <p class="note">일요일은 자유수영을 운영하지 않음</p>
+      </article>
+      <article class="facility open">
+        <div class="facility-top">
+          <h3>의왕 국민체육센터</h3>
+          <span class="status open">운영</span>
+        </div>
+        <div class="times"><span class="time">09:00~11:50</span><span class="time">14:00~16:50</span></div>
+        <p class="note">둘째 주 일요일로 정상 운영 (첫째 주 일요일 정기 휴관)</p>
+      </article>
+      <article class="facility open">
+        <div class="facility-top">
+          <h3>의왕 포일스포츠센터</h3>
+          <span class="status open">운영</span>
+        </div>
+        <div class="times"><span class="time">09:00~11:50</span><span class="time">14:00~16:50</span></div>
+        <p class="note">둘째 주 일요일로 정상 운영 (첫째 주 일요일 정기 휴관)</p>
+      </article>
+      <article class="facility open">
+        <div class="facility-top">
+          <h3>탄천종합운동장 수영장</h3>
+          <span class="status open">운영</span>
+        </div>
+        <div class="times"><span class="time">09:00~10:50</span><span class="time">13:00~14:50</span><span class="time">16:00~17:50</span></div>
+        <p class="note">둘째 주 일요일로 정상 운영 (첫째, 셋째 주 일요일 정기 휴장)</p>
+      </article>
+      <article class="facility open">
+        <div class="facility-top">
+          <h3>수원 광교복합체육센터 수영장</h3>
+          <span class="status open">운영</span>
+        </div>
+        <div class="times"><span class="time">09:00~12:00</span><span class="time">14:00~17:30</span></div>
+        <p class="note">둘째 주 일요일로 정상 운영 (매월 마지막 주 일요일 정기 휴관)</p>
+      </article>
+      <article class="facility open">
+        <div class="facility-top">
+          <h3>수원 스포츠 아일랜드</h3>
+          <span class="status open">운영</span>
+        </div>
+        <div class="times"><span class="time">06:00~20:00</span></div>
+        <p class="note">일요일 자유수영 운영</p>
+      </article></div>
+    </section></main>
+  <footer>
+    <p>마지막 확인: 2026년 08월 05일 14:55</p>
+    <p>시설 공지 변경으로 실제 운영 정보가 달라질 수 있습니다.</p>
+  </footer>
+</body>
+</html>
