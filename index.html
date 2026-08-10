@@ -21,6 +21,10 @@
       --closed-bg: #fff0ed;
       --uncertain: #8a5d00;
       --uncertain-bg: #fff7df;
+      --saturday: #1769aa;
+      --saturday-bg: #eaf4ff;
+      --holiday: #c23b36;
+      --holiday-bg: #fff0ef;
     }
     * { box-sizing: border-box; }
     body {
@@ -50,6 +54,14 @@
     }
     .day-section + .day-section { margin-top: 18px; }
     .day-heading { padding: 23px 20px 19px; border-bottom: 1px solid var(--line); }
+    .day-section.saturday { border-top: 5px solid var(--saturday); }
+    .day-section.saturday .day-heading { background: var(--saturday-bg); }
+    .day-section.saturday .eyebrow,
+    .day-section.saturday h2 { color: var(--saturday); }
+    .day-section.holiday { border-top: 5px solid var(--holiday); }
+    .day-section.holiday .day-heading { background: var(--holiday-bg); }
+    .day-section.holiday .eyebrow,
+    .day-section.holiday h2 { color: var(--holiday); }
     .eyebrow { margin: 0 0 2px; color: var(--brand); font-size: 13px; font-weight: 800; letter-spacing: .04em; }
     h2 { margin: 0; font-size: 25px; letter-spacing: -.04em; }
     .summary { margin: 7px 0 0; color: var(--muted); font-size: 14px; font-weight: 650; }
@@ -104,7 +116,7 @@
     </div>
   </header>
   <main>
-    <section class="day-section">
+    <section class="day-section saturday">
       <div class="day-heading">
         <div>
           <p class="eyebrow">이번 주 자유수영</p>
@@ -170,7 +182,7 @@
         <p class="note">일요일 및 공휴일 일정 적용</p>
       </article></div>
     </section>
-    <section class="day-section">
+    <section class="day-section holiday">
       <div class="day-heading">
         <div>
           <p class="eyebrow">이번 주 자유수영</p>
@@ -236,7 +248,7 @@
         <p class="note">일요일 및 공휴일 일정 적용</p>
       </article></div>
     </section>
-    <section class="day-section">
+    <section class="day-section holiday">
       <div class="day-heading">
         <div>
           <p class="eyebrow">이번 주 자유수영</p>
