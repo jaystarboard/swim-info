@@ -19,6 +19,7 @@
       --open-bg: #e8f7ee;
       --closed: #b0362d;
       --closed-bg: #fff0ed;
+      --closed-row-bg: #eef1f3;
       --uncertain: #8a5d00;
       --uncertain-bg: #fff7df;
       --saturday: #1769aa;
@@ -67,6 +68,13 @@
     .summary { margin: 7px 0 0; color: var(--muted); font-size: 14px; font-weight: 650; }
     .facility-list { padding: 4px 20px 10px; }
     .facility { padding: 17px 0 16px; border-bottom: 1px solid var(--line); }
+    .facility.closed {
+      margin: 7px -12px;
+      padding: 15px 12px;
+      border-bottom: 0;
+      border-radius: 14px;
+      background: var(--closed-row-bg);
+    }
     .facility:last-child { border-bottom: 0; }
     .facility-top { display: flex; align-items: flex-start; gap: 12px; justify-content: space-between; }
     h3 { margin: 0; font-size: 17px; line-height: 1.35; letter-spacing: -.025em; }
